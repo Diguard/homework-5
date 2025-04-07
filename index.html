@@ -18,13 +18,13 @@
             <nav>
               <ul class="site-nav">
                 <li class="item">
-                    <a href="./index.html" class="link">Студія</a>
+                    <a href="./index.html" class="link studio">Студія</a>
                 </li>
                 <li class="item">
                     <a href="./portfolio.html" class="link">Портфоліо</a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">Контакти</a>
+                    <a href="" class="link ">Контакти</a>
                 </li>
               </ul>
             </nav>
@@ -60,7 +60,12 @@
                     Ефективні рішення для
                     <span class="subtittle">вашого бізнесу</span>
                 </h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal show">
+                        <button data-modal-close>Закрыть</button>
+                    </div>
+                </div>
             </div>
 
        </section>
@@ -130,7 +135,7 @@
                 <li class="works-item">
                     <img src="./images/main/box3.jpg" alt="Підбір цвітової гамми" width="370"  height="294">
                     <div class="overlay">
-                        <p>Дизайнерські рішення</p>
+                        <p>Дизайнерські рішення</p> 
                     </div>
                 </li>
             </ul>
@@ -432,5 +437,7 @@
         
     </footer>
     
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
